@@ -20,7 +20,7 @@ public class MemberService {
 
 
     public Long join(Member member){
-        //같은 이름이 있는 중복 회원 x
+        //같은 이름이 있는 중복 회원 x2
         extracted(member);
         memberRepository.save(member);
         return member.getId();
